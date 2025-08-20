@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meeting Notes Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Meeting Notes Summarizer</h1>
+            <p>Upload your meeting transcript and get AI-powered summaries</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>1. Upload Transcript</h2>
+                <div class="input-group">
+                    <textarea 
+                        id="transcript" 
+                        placeholder="Paste your meeting transcript here..."
+                        rows="8"
+                    ></textarea>
+                </div>
+            </section>
+
+            <section class="prompt-section">
+                <h2>2. Custom Instructions (Optional)</h2>
+                <div class="input-group">
+                    <textarea 
+                        id="customPrompt" 
+                        placeholder="e.g., 'Summarize in bullet points for executives' or 'Highlight only action items'"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </section>
+
+            <section class="generate-section">
+                <button id="generateBtn" class="btn-primary">Generate Summary</button>
+                <div id="loading" class="loading hidden">Generating summary...</div>
+            </section>
+
+            <section class="summary-section hidden" id="summarySection">
+                <h2>3. Generated Summary</h2>
+                <div class="input-group">
+                    <textarea 
+                        id="summary" 
+                        rows="10"
+                        placeholder="Your AI-generated summary will appear here..."
+                    ></textarea>
+                </div>
+            </section>
+
+            <section class="share-section hidden" id="shareSection">
+                <h2>4. Share Summary</h2>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="emailSubject" 
+                        placeholder="Email Subject (optional)"
+                        value="Meeting Summary"
+                    >
+                </div>
+                <div class="input-group">
+                    <input 
+                        type="email" 
+                        id="recipients" 
+                        placeholder="Enter email addresses (comma-separated)"
+                    >
+                </div>
+                <button id="shareBtn" class="btn-secondary">Share via Email</button>
+                <div id="shareLoading" class="loading hidden">Sending email...</div>
+                <div id="shareResult" class="result hidden"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
