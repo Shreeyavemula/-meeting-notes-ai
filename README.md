@@ -1,7 +1,7 @@
 # 🤖 AI Meeting Notes Summarizer
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge)](https://meeting-notes-ai.windsurf.build)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/shreeyavemula/meeting-notes-ai)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Shreeyavemula/-meeting-notes-ai)
 
 An AI-powered full-stack application that transforms meeting transcripts into structured summaries with intelligent email sharing capabilities.
 
